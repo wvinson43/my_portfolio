@@ -1,0 +1,13 @@
+{
+  "name": "portfolio_start",
+  "version": "1.0.0",
+  "description": "A portfolio website template for campers",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run start"
+    
+  },
+  "author": "Wes Vinson",
+  "license": "ISC"
+}
