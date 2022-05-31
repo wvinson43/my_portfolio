@@ -337,90 +337,85 @@ footer {
 
 @media screen and (max-width: 720px) {
   /*changes reflects on screen with a width of 720px and below*/
-}
+  nav {
+    padding: 1.5rem 1rem;
+  }
 
-nav {
-  padding: 1.5rem 1rem;
-}
+  nav ul {
+    position: fixed;
+    background-color: var(--bg-color);
+    flex-direction: column;
+    top: 86px;
+    left: 10%;
+    width: 80%;
+    text-align: center;
+    transform: translateX(120%);
+    transition: transform 0.5s ease-in;
+  }
 
-nav ul {
-  position: fixed;
-  background-color: var(--bg-color);
-  flex-direction: column;
-  top: 86px;
-  left: 10%;
-  width: 80%;
-  text-align: center;
-  transform: translateX(120%);
-  transition: transform 0.5s ease-in;
-}
+  nav ul li {
+    margin: 8px;
+  }
 
-nav ul li {
-  margin: 8px;
-}
+  .burger-menu {
+    display: block;
+  }
 
-.burger-menu {
-  display: block;
-}
+  nav ul.show {
+    transform: translateX(0);
+  }
 
-nav ul.show {
-  transform: translateX(0);
-}
+  .banner {
+    margin-top: -4rem;
+    flex-direction: column;
+    gap: 0;
+  }
 
-.hero {
-  margin-top: -4rem;
-  flex-direction: column;
-  gap: 0;
-}
+  .banner img {
+    height: 55.5rem;
+    width: 40.5rem;
+  }
 
-.hero img {
-  height: 20.5rem;
-  width: 21rem;
-  margin-left: auto;
-  margin-right: auto;
-}
+  .bio {
+    margin-top: 3rem;
+    width: 38.5rem;
+  }
 
-.bio {
-  margin-top: -7rem;
-  width: 20.5rem;
-}
+  .more-about {
+    margin-top: 2rem;
+    padding: 1rem 3.5rem;
+  }
 
-.more-about {
-  margin-top: 2rem;
-  padding: 1rem 3.5rem;
-}
+  .more-about h2 {
+    text-align: center;
+  }
 
-.more-about h2 {
-  text-align: center;
-}
+  .more-about p {
+    text-align: justify;
+  }
 
-.more-about p {
-  text-align: justify;
-}
+  .icon {
+    width: 5.875rem;
+    height: 5.25rem;
+  }
 
-.icon {
-  width: 5.875rem;
-  height: 5.25rem;
-}
+  .projects-container {
+    flex-direction: column;
+  }
 
-.projects-container {
-  flex-direction: column;
-}
+  .project-container {
+    width: 20.875rem;
+  }
 
-.project-container {
-  width: 20.875rem;
-}
-
-.contact-form-container {
-  max-width: 23.75rem;
+  .contact-form-container {
+    max-width: 23.75rem;
+  }
 }
 
 @media screen and (max-width: 420px) {
-  .hero img {
-    height: 20.5rem;
-    width: 21rem;
-    margin-left: auto;
-    margin-right: auto;
+  .banner img {
+    height: 22.5rem;
+    width: 20.5rem;
   }
 
   .bio {
