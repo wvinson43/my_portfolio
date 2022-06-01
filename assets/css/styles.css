@@ -3,7 +3,7 @@
 /* var */
 
 :root {
-  --font-family: 'Roboto', sans-serf;
+  --font-family: 'Roboto', sans-serif;
   --normal-font: 400;
   --bold-font: 700;
   --bolder-font: 900;
@@ -132,7 +132,8 @@ nav ul li {
 
 .more-about {
   background-color: var(--bg-color);
-  padding: 1rem 6rem;
+  padding: 3rem 6rem;
+  margin-top: var(--top-margin);
 }
 
 .more-about h2 {
@@ -229,7 +230,7 @@ nav ul li {
 .contact-form-container {
   max-width: 40.75rem;
   margin: 0 auto;
-  padding: 0.938rem;
+  padding: 0.938rem 1.8rem 0.938rem 1.8rem;
   border-radius: 5px;
   box-shadow: 0 3px 10px var(--secondary-shadow);
 }
@@ -252,13 +253,16 @@ nav ul li {
   border-radius: 5px;
   border: none;
   border: 2px outset var(--primary-color);
-  font-size: 0.875rem;
+  font-size: 14px;
+  font-family: var(--font-family);
   outline: none;
+  resize: vertical;
 }
 
 input-field::placeholder {
   padding: 0.5rem;
   color: var(--primary-color);
+  overflow-x: hidden;
 }
 
 .submit-btn {
@@ -372,13 +376,14 @@ footer {
   }
 
   .banner img {
-    height: 55.5rem;
-    width: 40.5rem;
+    height: 20.5rem;
+    width: 27.5rem;
+    margin: auto;
   }
 
   .bio {
     margin-top: 3rem;
-    width: 38.5rem;
+    width: 25rem;
   }
 
   .more-about {
@@ -414,8 +419,11 @@ footer {
 
 @media screen and (max-width: 420px) {
   .banner img {
-    height: 22.5rem;
+    height: 20.5rem;
     width: 20.5rem;
+    margin: auto;
+    padding-right: 12px;
+    padding-top: 12px;
   }
 
   .bio {
