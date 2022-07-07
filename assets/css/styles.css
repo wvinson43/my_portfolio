@@ -249,6 +249,7 @@ nav ul li {
 
 .contact-form-container .input-field {
   width: 100%;
+  padding-left: 10px;
   padding-top: 10px;
   padding-bottom: 10px;
   border-radius: 5px;
@@ -270,7 +271,8 @@ input-field::placeholder {
   width: 100%;
   padding: 10px;
   margin: 10px 0;
-  background-color: #fff;
+  background-color: var(--primary-color);
+  color: rgb(212, 240, 212);
   border: 2px solid var(--primary-color);
   border-radius: 5px;
   font-size: 1rem;
@@ -279,7 +281,8 @@ input-field::placeholder {
 }
 
 .submit-btn:hover {
-  background-color: var(--primary-color);
+  background-color: #00ffff;
+  color: black;
   border: 2px solid var(--primary-color);
   cursor: pointer;
 }
@@ -288,15 +291,16 @@ input-field::placeholder {
 
 .socials {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
   position: fixed;
-  right: 1%;
-  bottom: 50%;
+  right: 3%;
+  top: 15%;
 }
 
 .socicon {
-  width: 2rem;
-  height: 2rem;
+  width: 3rem;
+  height: 3rem;
 }
 
 .scroll-up {
