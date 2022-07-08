@@ -48,6 +48,12 @@ body {
   font-family: var(--font-family);
 }
 
+h2 {
+  margin-top: calc(var(--top-margin) * 2);
+  margin-bottom: calc(var(--bottom-margin-2) * 1.5);
+  text-align: center;
+}
+
 /* navbar */
 
 nav {
@@ -110,13 +116,16 @@ nav ul li {
   width: 27.5rem;
   padding-left: 4px;
   padding-top: 8px;
+  border-radius: 8px;
 }
 
 .bio {
+  font-size: 1.25rem;
   width: 25rem;
   padding: 0.625rem;
   border-radius: 6px;
-  box-shadow: 0px 2px 15px 2px var(--primary-shadow);
+
+  /* box-shadow: 0px 2px 15px 2px var(--primary-shadow); */
 }
 
 .bio h1 {
@@ -132,18 +141,14 @@ nav ul li {
 
 .more-about {
   background-color: var(--bg-color);
-  padding: 3rem 13rem;
-  text-align: center;
+  width: 90%;
+  max-width: 800px;
+  margin: auto;
   margin-top: var(--top-margin);
 }
 
-.more-about h2 {
-  margin-bottom: var(--bottom-margin);
-  text-align: center;
-}
-
 .more-about p {
-  line-height: var(--line-height);
+  line-height: 1.5;
   padding: 0.4rem;
 }
 
@@ -154,10 +159,6 @@ nav ul li {
   margin: auto;
   text-align: center;
   margin-top: 2.5rem;
-}
-
-.skill-header {
-  margin-bottom: 1rem;
 }
 
 .skills-wrapper img {
@@ -179,53 +180,58 @@ nav ul li {
 
 .projects {
   background-color: var(--bg-color);
-  padding: 32px 0;
   margin-top: 2rem;
 }
 
 .project-pic {
-  width: 65%;
-  height: 60%;
+  width: 100%;
+  height: 180px;
+  margin-bottom: 2rem;
+  object-fit: cover;
+  border: solid 1px var(--primary-shadow);
+  border-radius: 3px;
 }
 
 .projects-container {
   display: flex;
-  align-items: center;
   justify-content: center;
 }
 
-.projects-title {
-  text-align: center;
-  margin-bottom: 1rem;
-}
-
 .project-container {
-  text-align: center;
   width: 21.875rem;
+  display: flex;
+  flex-direction: column;
   padding: 1rem;
 }
 
+.project-link {
+  margin-top: auto;
+  text-align: center;
+}
+
 .project-container p {
-  padding: 0.4rem;
+  line-height: 1.5;
+  margin-bottom: 1.5em;
 }
 
 .project-title {
   margin-bottom: var(--bottom-margin);
 }
 
-.project-details {
-  margin-bottom: var(--bottom-margin);
+.project-specs {
+  list-style-type: initial;
+  line-height: 1.5;
+  margin: 0.5em 0 1.15em 1.25em;
+}
+
+.project-specs li {
+  margin-bottom: 0.5em;
 }
 
 /* contact */
 
 .contact {
   margin-top: 2rem;
-}
-
-.contact h2 {
-  text-align: center;
-  margin-bottom: var(--bottom-margin-2);
 }
 
 .contact-form-container {
@@ -337,7 +343,7 @@ footer {
 .project-card {
   background-color: #fdf4dc;
   border-radius: 11px;
-  box-shadow: 0 3px 10px var(--primary-shadow);
+  box-shadow: 0 2px 10px -2px rgba(0, 0, 0, 0.25);
   padding: 20px;
   margin: 10px;
 }
@@ -389,19 +395,6 @@ footer {
   .bio {
     margin-top: 3rem;
     width: 25rem;
-  }
-
-  .more-about {
-    margin-top: 2rem;
-    padding: 1rem 3.5rem;
-  }
-
-  .more-about h2 {
-    text-align: center;
-  }
-
-  .more-about p {
-    text-align: justify;
   }
 
   .icon {

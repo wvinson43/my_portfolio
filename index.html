@@ -49,7 +49,6 @@
     <section class="banner" id="about">
       <img src="banner.jpg" alt="banner" loading="lazy" class="banner-img" />
       <div class="bio animate__animated animate__shakeX">
-        <h2 class="bio-title">About Me</h2>
         <p class="bio-text">
           I am a self-taught web developer and current/former educator who has
           been putting in the work to transition into the tech space!
@@ -57,22 +56,93 @@
       </div>
     </section>
 
-    <!-- More about -->
+    <!-- Projects section -->
 
-    <section class="more-about">
-      <h2>More About Me</h2>
-      <p>
-        In the past few years, I have worked hard to learn HTML, CSS,
-        JavaScript, SQL, and Python3 as languages.
-      </p>
-      <p>
-        I have learned how to build with the Angular framework and React
-        Library, in conjunction with NodeJS and Mongodb.
-      </p>
-      <p>
-        Lastly I have deployed sites through Firebase, Heroku, Vercel, and
-        Github.
-      </p>
+    <section class="projects" id="projects">
+      <h2 class="projects-title">Some of my Recent Projects</h2>
+      <div class="projects-container">
+        <div class="project-container project-card">
+          <img
+            src="assets/images/demo_1.png"
+            alt="meetup planner"
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="project-title">Meetup Planner with Details</h3>
+          <p class="project-details">
+            Plan a meetup location with a friend anywhere and upload description
+            and image details.
+          </p>
+
+          <h4>Details:</h4>
+          <ul class="project-specs">
+            <li>Built with React framework NextJS</li>
+            <li>
+              MongoDB Atlas handles documents created by form entry for posting
+              and fetching
+            </li>
+          </ul>
+          <a
+            href="https://next-js-pick-a-meetup-deploy.vercel.app/"
+            target="_blank"
+            class="project-link"
+            >Check it Out</a
+          >
+        </div>
+        <div class="project-container project-card">
+          <img
+            src="assets/images/demo_2.png"
+            alt="meal/ ingredient planner"
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="project-title">Meal Ingredient Planner & Cart</h3>
+          <p class="project-details">
+            Upload meal ingredients & images, shop for ingredients and adjust
+            ingredients based on user preferences.
+          </p>
+
+          <h4>Details:</h4>
+          <ul class="project-specs">
+            <li>Built with Angular and TypeScript</li>
+            <li>Includes authenticated user signup and ID creation</li>
+            <li>CRUD functionality facilated and deployed via Firebase</li>
+          </ul>
+          <a
+            href="https://ng-course-shop-recipe.web.app/auth"
+            target="_blank"
+            class="project-link"
+            >Check it Out</a
+          >
+        </div>
+        <div class="project-container project-card">
+          <img
+            src="assets/images/demo_3.png"
+            alt="travel plans"
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="project-title">Travel Plan, Book & Purchase</h3>
+          <p class="project-details">
+            Select a tour from a collection, book and purchase it (includes
+            reviews), and then access booked information.
+          </p>
+
+          <h4>Details:</h4>
+          <ul class="project-specs">
+            <li>Built with Express/Node.js</li>
+            <li>Uses MongoDB and Mongoose for CRUD operations</li>
+            <li>SendGrid and Nodemailer handle email communication</li>
+            <li>Uses Stripe for secure transactions</li>
+          </ul>
+          <a
+            href="https://natours-wvinson43.herokuapp.com/"
+            target="_blank"
+            class="project-link"
+            >Check it Out</a
+          >
+        </div>
+      </div>
     </section>
 
     <!-- Skills section -->
@@ -136,79 +206,19 @@
       </div>
     </section>
 
-    <!-- Projects section -->
+    <!-- More about -->
 
-    <section class="projects" id="projects">
-      <h2 class="projects-title">Some of my Recent Projects</h2>
-      <div class="projects-container">
-        <div class="project-container project-card">
-          <img
-            src="assets/images/demo_1.png"
-            alt="meetup planner"
-            loading="lazy"
-            class="project-pic"
-          />
-          <h3 class="project-title">Meetup Planner with Details</h3>
-          <p class="project-details">
-            This React website allows one to plan a meetup location with a
-            friend anywhere and upload description and image details. Built with
-            NextJS framework with React. Mongodb Atlas handled documents created
-            by form entry for posting and fetching.
-          </p>
-          <a
-            href="https://next-js-pick-a-meetup-deploy.vercel.app/"
-            target="_blank"
-            class="project-link"
-            >Check it Out</a
-          >
-        </div>
-        <div class="project-container project-card">
-          <img
-            src="assets/images/demo_2.png"
-            alt="meal/ ingredient planner"
-            loading="lazy"
-            class="project-pic"
-          />
-          <h3 class="project-title">Meal Ingredient Planner & Cart</h3>
-          <p class="project-details">
-            This Angular website allows one to upload meal ingredients & images,
-            shop for ingredients and adjust ingredients based on user
-            preferences. It includes authenticated user signup and id creation
-            and CRUD functionality facilated and deployed via Firebase.
-            Typescript is also utilized in this project.
-          </p>
-          <a
-            href="https://ng-course-shop-recipe.web.app/auth"
-            target="_blank"
-            class="project-link"
-            >Check it Out</a
-          >
-        </div>
-        <div class="project-container project-card">
-          <img
-            src="assets/images/demo_3.png"
-            alt="travel plans"
-            loading="lazy"
-            class="project-pic"
-          />
-          <h3 class="project-title">Travel Plan, Book & Purchase</h3>
-          <p class="project-details">
-            This Node.Js website built with an Express framework allows one to
-            select a tour from a collection, book and purchase it (includes
-            reviews), and then access booked information. Crud operations and
-            testing were created using MongoDB, Mongoose, and PostMan. Emails
-            communicatons handled via sendgrid and nodemailer. Stripe is used
-            for creating secured transactions in real-time.
-          </p>
-          <a
-            href="https://natours-wvinson43.herokuapp.com/"
-            target="_blank"
-            class="project-link"
-            >Check it Out</a
-          >
-        </div>
-      </div>
+    <section class="more-about">
+      <h2>More About Me</h2>
+      <p>
+        In the past few years, I have worked hard to learn HTML, CSS,
+        JavaScript, SQL, and Python3 as languages. I have learned how to build
+        with the Angular framework and React Library, in conjunction with NodeJS
+        and Mongodb. Lastly I have deployed sites through Firebase, Heroku,
+        Vercel, and Github.
+      </p>
     </section>
+
     <!-- Contact section -->
 
     <section class="contact" id="contact">
