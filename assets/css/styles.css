@@ -195,7 +195,6 @@ nav ul li {
 
 .projects-container {
   display: flex;
-  align-items: center;
   justify-content: center;
 }
 
